@@ -76,7 +76,7 @@ def Translate(text, source_language):
     params = {
     'api-version': '3.0',
     'from': source_language,
-    'to': ['en']
+    'to': ['en','fr', 'zu']
     }
 
     headers = {
