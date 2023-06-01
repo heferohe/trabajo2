@@ -22,6 +22,7 @@ def home():
         # Aquí es donde procesarías el texto. Por ahora, solo devolvemos el mismo texto.
         source_language = ''
         translated_text = Translate(text,'en')
+        lang_detected=GetLanguage(text)
           
         return render_template('home.html', translated_text=translated_text,lang_detected=source_language)
       
