@@ -21,8 +21,6 @@ def home():
         text = request.form['text']
         destino_language = request.form['language']
         # Aquí es donde procesarías el texto. Por ahora, solo devolvemos el mismo texto.
-        #source_language = ''
-       # translated_text = Translate(text,'en')
         source_language=GetLanguage(text)
         translated_text = Translate(text,source_language,destino_language)
           
@@ -35,7 +33,6 @@ def GetLanguage(text):
     # Default language is English
     language = 'en'
 
-    # Use the Translator detect function
     # Use the Translator detect function
     path = '/detect'
     url = translator_endpoint + path
