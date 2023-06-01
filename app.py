@@ -24,7 +24,7 @@ def home():
         translated_text = Translate(text,en)
           
         return render_template('home.html', translated_text=translated_text,lang_detected=source_language)
-    
+      
     return render_template('home.html')
 
 ##################################################################
